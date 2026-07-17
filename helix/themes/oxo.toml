@@ -1,0 +1,257 @@
+# oxocarbon_dark — a Helix port of Oxocarbon (IBM Carbon)
+# Palette source: nyoom-engineering/base16-oxocarbon (MIT)
+# Original Neovim theme: nyoom-engineering/oxocarbon.nvim
+# Author: <you>
+# License: MIT
+#
+# Philosophy: color is assigned deliberately, not decoratively. Categories
+# that are genuinely easy to confuse at a glance (type vs. function vs.
+# method vs. constructor vs. member) each get their own hue. Categories that
+# are truly interchangeable when reading code (if/while/for, or bullet vs.
+# numbered list markers) share a hue on purpose — splitting those further
+# would just be noise. Nothing is colored merely because a capture exists
+# for it; most punctuation, parameters, and generic identifiers inherit
+# plain foreground.
+
+# ---------------------------------------------------------------------------
+# Syntax highlighting
+# ---------------------------------------------------------------------------
+
+"comment" = { fg = "comment_gray", modifiers = ["italic"] }
+"comment.line" = { fg = "comment_gray", modifiers = ["italic"] }
+"comment.block" = { fg = "comment_gray", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "fg_dim", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "fg_dim", modifiers = ["italic"] }
+"comment.unused" = { fg = "comment_gray", modifiers = ["italic", "dim"] }
+
+"keyword" = "blue"
+"keyword.control.conditional" = "blue"
+"keyword.control.repeat" = "blue"
+"keyword.control.import" = "blue"
+"keyword.control.return" = "blue"
+"keyword.control.exception" = { fg = "magenta", modifiers = ["bold"] }
+"keyword.operator" = "blue"
+"keyword.directive" = "blue"
+"keyword.function" = { fg = "blue", modifiers = ["bold"] }
+"keyword.storage.type" = "blue"
+"keyword.storage.modifier" = "fg"
+
+"operator" = "fg"
+
+"punctuation" = "fg_dim"
+"punctuation.delimiter" = "fg_dim"
+"punctuation.bracket" = "fg_dim"
+"punctuation.special" = "blue_light"
+
+"type" = "cyan"
+"type.builtin" = "blue"
+"type.parameter" = { fg = "cyan", modifiers = ["italic"] }
+"type.enum" = "cyan"
+"type.enum.variant" = "cyan"
+
+"constructor" = "purple"
+
+"attribute" = { fg = "blue", modifiers = ["italic"] }
+
+"function" = "blue_bright"
+"function.builtin" = { fg = "blue_bright", modifiers = ["italic"] }
+"function.method" = "magenta"
+"function.macro" = { fg = "blue_bright", modifiers = ["bold"] }
+"function.special" = { fg = "blue_bright", modifiers = ["italic"] }
+
+"tag" = { fg = "cyan", modifiers = ["bold"] }
+"tag.builtin" = "cyan"
+
+"namespace" = "fg"
+"label" = "cyan"
+
+"variable" = "fg"
+"variable.builtin" = { fg = "blue", modifiers = ["italic"] }
+"variable.mutable" = { fg = "fg", underline = { color = "comment_gray", style = "dotted" } }
+"variable.parameter" = { fg = "fg_dim", modifiers = ["italic"] }
+"variable.parameter.mutable" = { fg = "fg_dim", modifiers = ["italic"], underline = { color = "comment_gray", style = "dotted" } }
+"variable.other.member" = "teal"
+"variable.other.member.private" = { fg = "teal", modifiers = ["italic"] }
+
+"string" = "green"
+"string.regexp" = "pink"
+"string.special" = "blue_light"
+"string.special.path" = "blue_light"
+"string.special.url" = { fg = "blue_light", underline = { style = "line" } }
+"string.special.symbol" = "blue_light"
+
+"constant" = "pink"
+"constant.builtin" = { fg = "blue", modifiers = ["bold"] }
+"constant.builtin.boolean" = { fg = "blue", modifiers = ["bold"] }
+"constant.numeric" = "pink"
+"constant.numeric.integer" = "pink"
+"constant.numeric.float" = "pink"
+"constant.character" = "pink"
+"constant.character.escape" = "cyan"
+
+"special" = { fg = "blue_bright", modifiers = ["bold"] }
+
+# ---------------------------------------------------------------------------
+# Markup (markdown, etc.)
+# ---------------------------------------------------------------------------
+
+"markup.heading.marker" = { fg = "comment_gray" }
+"markup.heading.1" = { fg = "blue_bright", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "cyan", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "magenta", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "pink", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "purple", modifiers = ["bold"] }
+
+"markup.list" = "blue"
+"markup.list.unnumbered" = "blue"
+"markup.list.numbered" = "blue"
+"markup.list.checked" = "green"
+"markup.list.unchecked" = "comment_gray"
+
+"markup.bold" = { fg = "fg_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "fg", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "comment_gray", modifiers = ["crossed_out"] }
+
+"markup.link.url" = { fg = "blue_light", underline = { style = "line" } }
+"markup.link.label" = "blue"
+"markup.link.text" = { fg = "fg_bright", underline = { style = "line" } }
+
+"markup.quote" = { fg = "fg_dim", modifiers = ["italic"] }
+
+"markup.raw" = { fg = "fg", bg = "bg1" }
+"markup.raw.inline" = { fg = "pink", bg = "bg1" }
+"markup.raw.block" = { fg = "fg", bg = "bg1" }
+
+"markup.normal" = "fg"
+
+"diff.plus" = "green"
+"diff.plus.gutter" = "green"
+"diff.minus" = "magenta"
+"diff.minus.gutter" = "magenta"
+"diff.delta" = "blue"
+"diff.delta.gutter" = "blue"
+"diff.delta.moved" = "purple"
+"diff.delta.conflict" = "pink"
+
+# ---------------------------------------------------------------------------
+# Interface
+# ---------------------------------------------------------------------------
+
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.background.separator" = { fg = "bg2" }
+
+"ui.text" = "fg"
+"ui.text.focus" = { fg = "fg_bright", bg = "bg2", modifiers = ["bold"] }
+"ui.text.inactive" = "fg_dim"
+"ui.text.info" = "fg_dim"
+"ui.text.directory" = "blue_light"
+"ui.text.symlink" = { fg = "blue_light", modifiers = ["italic"] }
+
+"ui.window" = { fg = "bg2" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg1" }
+"ui.linenr" = "comment_gray"
+"ui.linenr.selected" = { fg = "fg_bright", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "fg", bg = "bg1" }
+"ui.statusline.inactive" = { fg = "comment_gray", bg = "bg1" }
+"ui.statusline.separator" = "comment_gray"
+"ui.statusline.normal" = { fg = "bg", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "magenta", modifiers = ["bold"] }
+
+"ui.bufferline" = { fg = "comment_gray", bg = "bg1" }
+"ui.bufferline.active" = { fg = "fg_bright", bg = "bg2", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg1" }
+
+"ui.popup" = { fg = "fg", bg = "bg1" }
+"ui.popup.info" = { fg = "fg", bg = "bg1" }
+"ui.help" = { fg = "fg_dim", bg = "bg1" }
+
+"ui.picker.header" = { fg = "fg_dim", bg = "bg1", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "comment_gray", bg = "bg1" }
+"ui.picker.header.column.active" = { fg = "cyan", bg = "bg1", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "fg", bg = "bg1" }
+"ui.menu.selected" = { fg = "fg_bright", bg = "bg2", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "comment_gray", bg = "bg1" }
+
+"ui.selection" = { bg = "bg2" }
+"ui.selection.primary" = { bg = "bg2" }
+
+"ui.highlight" = { bg = "bg1" }
+"ui.highlight.frameline" = { bg = "green", modifiers = ["dim"] }
+
+"ui.cursor" = { fg = "bg", bg = "fg" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "green" }
+"ui.cursor.select" = { fg = "bg", bg = "magenta" }
+"ui.cursor.match" = { fg = "fg_bright", bg = "bg2", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg", bg = "fg_bright" }
+
+"ui.cursorline.primary" = { bg = "bg1" }
+"ui.cursorline.secondary" = { bg = "bg1" }
+"ui.cursorcolumn.primary" = { bg = "bg1" }
+"ui.cursorcolumn.secondary" = { bg = "bg1" }
+
+"ui.debug.breakpoint" = { fg = "magenta", modifiers = ["bold"] }
+"ui.debug.active" = { fg = "green", modifiers = ["bold"] }
+
+"ui.virtual.ruler" = { bg = "bg1" }
+"ui.virtual.whitespace" = "bg2"
+"ui.virtual.indent-guide" = "bg2"
+"ui.virtual.wrap" = "bg2"
+"ui.virtual.jump-label" = { fg = "bg", bg = "magenta", modifiers = ["bold"] }
+"ui.virtual.inlay-hint" = { fg = "comment_gray", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "comment_gray", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "comment_gray", modifiers = ["italic"] }
+
+"rainbow" = ["blue", "cyan", "magenta", "green", "pink", "purple"]
+
+# ---------------------------------------------------------------------------
+# Diagnostics
+# ---------------------------------------------------------------------------
+
+"warning" = { fg = "pink", modifiers = ["bold"] }
+"error" = { fg = "magenta", modifiers = ["bold"] }
+"info" = { fg = "blue_light", modifiers = ["bold"] }
+"hint" = { fg = "green", modifiers = ["bold"] }
+
+"warning.diagnostic.inline" = { underline = { color = "pink", style = "curl" } }
+"error.diagnostic.inline" = { underline = { color = "magenta", style = "curl" } }
+"info.diagnostic.inline" = { underline = { color = "blue_light", style = "curl" } }
+"hint.diagnostic.inline" = { underline = { color = "green", style = "curl" } }
+
+"diagnostic" = { underline = { color = "comment_gray", style = "dotted" } }
+"diagnostic.error" = { underline = { color = "magenta", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "pink", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue_light", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "green", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"tabstop" = { bg = "bg2" }
+
+# ---------------------------------------------------------------------------
+# Palette — IBM Carbon / Oxocarbon (base16-oxocarbon, MIT)
+# ---------------------------------------------------------------------------
+
+[palette]
+bg           = "#161616" # base00
+bg1          = "#262626" # base01
+bg2          = "#393939" # base02
+comment_gray = "#525252" # base03
+fg_dim       = "#dde1e6" # base04
+fg           = "#f2f4f8" # base05
+fg_bright    = "#ffffff" # base06
+teal         = "#08bdba" # base07 — member/field
+cyan         = "#3ddbd9" # base08 — type/struct/enum/tag
+blue         = "#78a9ff" # base09 — keyword/builtin-type/constant.builtin
+magenta      = "#ee5396" # base0A — method/error/exception
+blue_bright  = "#33b1ff" # base0B — function
+pink         = "#ff7eb6" # base0C — constant/number/warning
+green        = "#42be65" # base0D — string/hint/diff.plus
+purple       = "#be95ff" # base0E — constructor/diff.moved
+blue_light   = "#82cfff" # base0F — links/paths/special-strings/info

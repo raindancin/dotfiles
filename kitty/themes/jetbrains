@@ -1,0 +1,60 @@
+# JetBrains Dark
+# Based on the Neovim colorscheme palette
+
+# Main colors
+foreground            #d2d5db
+background            #16171a
+selection_foreground  #16171a
+selection_background  #214283
+cursor                #d2d5db
+cursor_text_color     #16171a
+
+# Window chrome
+active_border_color   #56a8f5
+inactive_border_color #2d3034
+bell_border_color    #d64d5b
+
+# macOS titlebar
+macos_titlebar_color  #16171a
+
+# Tab bar
+active_tab_background   #26282e
+active_tab_foreground   #d2d5db
+inactive_tab_background #1b1c20
+inactive_tab_foreground #7a7e85
+tab_bar_background      #16171a
+
+# ANSI colors
+# black
+color0  #16171a
+color8  #7a7e85
+
+# red
+color1  #d64d5b
+color9  #ef6b78
+
+# green
+color2  #6aab73
+color10 #82c58c
+
+# yellow
+color3  #c29e4a
+color11 #d5b778
+
+# blue
+color4  #56a8f5
+color12 #57aaf7
+
+# magenta
+color5  #c792ea
+color13 #d7a7f2
+
+# cyan
+color6  #2aacb8
+color14 #4ccbd6
+
+# white
+color7  #ced0d6
+color15 #ffffff
+
+

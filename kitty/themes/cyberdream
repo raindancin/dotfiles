@@ -1,0 +1,50 @@
+# cyberdream theme for kitty
+background            #16181a
+foreground            #ffffff
+cursor                #ffffff
+cursor_text_color     #16181a
+selection_background  #3c4048
+
+# black
+color0                #16181a
+color8                #3c4048
+
+# red
+color1                #ff6e5e
+color9                #ff6e5e
+
+# green
+color2                #5eff6c
+color10               #5eff6c
+
+# yellow
+color3                #f1ff5e
+color11               #f1ff5e
+
+# blue
+color4                #5ea1ff
+color12               #5ea1ff
+
+# magenta
+color5                #bd5eff
+color13               #bd5eff
+
+# cyan
+color6                #5ef1ff
+color14               #5ef1ff
+
+# white
+color7                #ffffff
+color15               #ffffff
+selection_foreground  #ffffff
+
+active_tab_background #FF5EF1
+active_tab_foreground #16181a
+
+inactive_tab_background #16181a
+inactive_tab_foreground #ffffff
+
+# Border
+active_border_color #4a4e56
+inactive_border_color #16181a
+macos_titlebar_color background

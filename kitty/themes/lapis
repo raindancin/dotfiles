@@ -1,0 +1,48 @@
+foreground #D6E2FF
+background #1B1F27
+macos_titlebar_color background
+
+# Borders
+active_border_color   #3C506B
+inactive_border_color #1B1F27
+
+# Tabs
+active_tab_foreground   #1B1F27
+active_tab_background   #84FCD4
+inactive_tab_foreground #D6E2FF
+inactive_tab_background #2E3953
+
+# black
+color0 #1D1F28
+color8 #1D1F28
+
+# red
+color1 #FD84AC
+color9 #FD84AC
+
+# green
+color2  #A6F380
+color10 #A6F380
+
+# yellow
+color3  #D2B371
+color11 #D2B371
+
+# blue
+color4  #83ABFC
+color12 #83ABFC
+
+# magenta
+color5  #D483FC
+color13 #D483FC
+
+# cyan
+color6  #84FCD4
+color14 #84FCD4
+
+# white
+color7  #D6E2FF
+color15 #D6E2FF
+
+cursor #84FCD4
+cursor_text_color #1B1F27

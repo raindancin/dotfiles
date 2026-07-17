@@ -1,0 +1,15 @@
+command = /opt/homebrew/bin/fish
+config-file = ./keybinds
+theme = jb
+
+window-padding-x = 10
+window-padding-y = 10
+
+cursor-style = bar
+
+# background-opacity = 0.96
+# background-blur = true
+
+font-family = "Maple Mono"
+font-size = 16
+

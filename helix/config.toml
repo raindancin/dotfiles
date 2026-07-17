@@ -1,0 +1,47 @@
+theme = "oxo"
+
+[editor]
+line-number = "relative"
+continue-comments = false
+completion-timeout = 5
+completion-trigger-len = 2
+popup-border = "all"
+color-modes = true
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.gutters.line-numbers]
+min-width = 3
+
+[editor.indent-guides]
+render = true
+character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 0
+
+[editor.lsp]
+enable = true
+display-messages = false
+auto-signature-help = true
+display-signature-help-docs = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "diagnostics"]
+center = ["file-base-name"]
+right = ["position", "register"]
+
+# or control each character
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
