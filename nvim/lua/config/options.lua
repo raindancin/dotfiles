@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-vim.keymap.set({ "n", "v" }, "mm", "%", { desc = "Go to matching brace" })
-
 -- Yank text to system clipboard
 vim.opt.clipboard = "unnamedplus"
 
@@ -64,8 +62,5 @@ vim.api.nvim_create_autocmd("CmdlineLeave", {
 	end,
 })
 
--- Keymap to open journal
-vim.keymap.set("n", "<leader>jj", function()
-	local date = os.date("%Y-%m-%d")
-	vim.cmd("edit ~/journal/" .. os.date("%Y-%m") .. "/" .. date .. ".md")
-end)
+-- Keymaps
+vim.keymap.set({ "n", "v" }, "mm", "%", { desc = "Go to matching brace" })
