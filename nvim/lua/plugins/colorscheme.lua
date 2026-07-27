@@ -14,7 +14,7 @@ return {
   			style = "auto",           -- "auto" | "dark" | "light" -- see Dark / light below
 
   			styles = {
-    			comments = { italic = true },
+    			comments = { italic = false },
     			keywords = { italic = false },
     			functions = {},
     			variables = {},
