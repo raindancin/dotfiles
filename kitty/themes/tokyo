@@ -1,0 +1,55 @@
+# Main colors
+foreground            #a9b1d6
+background            #1a1b26
+selection_foreground  #c0caf5
+selection_background  #292e42
+cursor                #a9b1d6
+cursor_text_color     #1a1b26
+
+# Window chrome
+active_border_color   #565f89
+inactive_border_color #292e42
+bell_border_color    #f7768e
+
+# macOS titlebar
+macos_titlebar_color  #1a1b26
+
+# Tab bar
+active_tab_background   #292e42
+active_tab_foreground   #a9b1d6
+inactive_tab_background #1a1b26
+inactive_tab_foreground #565f89
+tab_bar_background      #1a1b26
+
+# ANSI colors
+# black
+color0  #292e42
+color8  #565f89
+
+# red
+color1  #f7768e
+color9  #ff9e64
+
+# green
+color2  #9ece6a
+color10 #9ece6a
+
+# yellow
+color3  #e0af68
+color11 #e0af68
+
+# blue
+color4  #7aa2f7
+color12 #2ac3de
+
+# magenta
+color5  #bb9af7
+color13 #bb9af7
+
+# cyan
+color6  #7dcfff
+color14 #7dcfff
+
+# white
+color7  #a9b1d6
+color15 #c0caf5
